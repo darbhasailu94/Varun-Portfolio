@@ -1,0 +1,14 @@
+#mobile {
+    width:100%;
+    transform:rotate(-12deg);
+    color: aliceblue;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    margin-top: 10%;
+    overflow: hidden;
+}
+/*"*/
+@media only screen and (min-width: 576px) {#mobile {display: block}}
+@media only screen and (min-width: 768px) {#mobile {display: none}}
+@media only screen and (min-width: 992px) {#mobile {display: none}}
+@media only screen and (min-width: 1200px){#mobile {display: none}}
