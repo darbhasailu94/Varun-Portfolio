@@ -11,6 +11,21 @@
         <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="Resources/bootstrap-4/js/bootstrap.js"></script>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0; //Safari
+                document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
+            }
+        </script>
     </head>
 
     <body class="bg-dark">
@@ -74,5 +89,8 @@
                 <h1 style="color: aliceblue;text-align: center;font-family: 'Gloria Hallelujah', cursive;">Varun Singh Photography</h1>
             </div>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="Resources/images/chevron-up.svg" alt="go to top image" style="width: 30px;height: 30px;">
+        </button>
     </body>
 </html>
